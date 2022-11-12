@@ -6,10 +6,12 @@ A pasta de origem (pasta monitorada) e a pasta de destino do arquivo, bem como q
 
 ## Publicar código do windows service
 dotnet publish -c Release -o c:\CopyFileTo.WS
+
 copiar arquivo config.json para c:\Windows\System32
 
 ## Criar um windows service
 executar CMD como Administrador
+
 sc create "CopyFileTo.WindowsService" binPath= c:\CopyFilesToWS\CopyFileToWindowsService.exe
 
 
